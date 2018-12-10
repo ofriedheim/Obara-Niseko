@@ -1,0 +1,79 @@
+client.on('message', (message) => {
+	if (mesasge.includes("!fortune")){
+		fortune.unshift(getRandomInt(20) + 1);
+		let string = string.substring(8, string.length);
+		message.reply(string + '\n');
+		if (!(fortune[0] === 1 && fortune[1] === 0 && fortune[2] == 0)) {
+			switch (fortune[0]) {
+				case 1:
+					message.reply("My reply is no.");
+					break ;
+				case 2:
+					message.reply("My sources say no.");
+					break ;
+				case 3:
+					message.reply("Outlook not so good.");
+					break ;
+				case 4:
+					message.reply("Don't count on it.");
+					break ;
+				case 5:
+					message.reply("Very doubtful.");
+					break ;
+				case 6:
+					message.reply("Reply hazy, try again.");
+					break ;
+				case 7:
+					message.reply("Ask again later.");
+					break ;
+				case 8:
+					message.reply("Better not tell you now");
+					break ;
+				case 9:
+					message.reply("Can't predict now.");
+					break ;
+				case 10:
+					message.reply("Concentrate and ask again.");
+					break ;
+				case 11:
+					message.reply("Outlook good.");
+					break ;
+				case 12:
+					message.reply("Signs point to yes.");
+					break ;
+				case 13:
+					message.reply("Most likely.");
+					break ;
+				case 14:
+					message.reply("As I see it, yes.");
+					break ;
+				case 15:
+					message.reply("You may rely on it.");
+					break ;
+				case 16:
+					message.reply("Yes");
+					break ;
+				case 17:
+					message.reply("Yes, definitely.");
+					break ;
+				case 18:
+					message.reply("It is decidedly so.");
+					break ;
+				case 19:
+					message.reply("Without a doubt.");
+					break ;
+				case 20:
+					message.reply("It is certain.");
+					break ;
+				default:
+					message.reply("Something went wrong, tell Oliver to fix it!");
+				}
+			}
+		else {
+			message.reply("Uh oh... Looks like you're cursed!");
+			message.reply("Dark energy will surround you for the rest of your life...");
+			message.reply("At least you won't be cursed for very long...");
+		}
+	}
+}
+})
