@@ -27,6 +27,13 @@ client.on('message', (message) => {
 })
 
 client.on('message', (message) => {
+	if (message.content.includes("!gun")){
+		message.channel.send(settings.gun);
+		message.channel.send("Try me, bitch.");
+	}
+})
+
+client.on('message', (message) => {
 	if (message.content === 'FLEENSTONES?'){
 		message.reply('You have been granted my luck. I wish you well.')
 	}
