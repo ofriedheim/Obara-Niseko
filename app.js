@@ -15,6 +15,13 @@ client.on('message', (message) => {
 })
 
 client.on('message', (message) => {
+	if (message.content === '!smug'){
+		message.channel.send(settings.smug);
+		message.channel.send("Ohohoho");
+	}
+})
+
+client.on('message', (message) => {
 	if (message.content === 'AWAKEN, MY MASTER'){
 		message.channel.send("I have awoken.");
 	}
